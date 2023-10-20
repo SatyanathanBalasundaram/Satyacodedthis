@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle</title>
+    <style>
+
+        .top{
+            display: inline-block;
+            margin-bottom: 0;
+        }
+        .c1 {
+            width: 100px;
+            height: 100px;
+            border-top-left-radius: 100px;
+            background-color: black;
+            float: left;
+            margin-right: 4px;
+            margin-bottom: 0px;
+        }
+        .c2 {
+            width: 100px;
+            height: 100px;
+            border-top-right-radius: 100px;
+            background-color: grey;
+            float: left;
+            margin-bottom: 0px;
+
+        }
+        .bottom {
+            display: inline-block;
+            margin-top: 0px;
+        }
+        .c3 {
+            width: 100px;
+            height: 100px;
+            border-bottom-left-radius: 100px;
+            background-color: grey;
+            float: left;
+            margin-right: 4px;
+            margin-top: 0px;
+        }
+        .c4 {
+            width: 100px;
+            height: 100px;
+            border-bottom-right-radius: 100px;
+            background-color: black;
+            float: left;
+            margin-top: 0px;
+            
+        }
+        .circle {
+            width: fit-content;
+            height: fit-content;
+            margin: auto;
+        }
+
+        .modalbox{
+            display: none;
+            background-color: rgba(74, 140, 187, 0.94);
+            border: 2px solid rgb(4, 4, 36);
+            border-radius: 10px;
+            width: 200px;
+            height: 150px;
+            align-items: center;
+            padding: 10px;
+            margin: auto;
+            position: absolute;
+            top: 50%;
+            left: 43%;
+        }
+
+        #closebtn {
+            font-size: large;
+            font-weight: bold;
+            position: absolute;
+            right: 15px;
+            top: 15px;
+        }
+
+        .modalbox p {
+            align-items: center;
+            text-align: center;
+            position: relative;
+            font-size: 20px;
+            top: 20%;
+        }
+        
+        h1 {
+            font-size: 80px;
+            text-align: center;
+        }
+        
+        p {
+            padding-left: 3px;
+            
+            font-size: 18px;
+            line-break: anywhere;
+        }
+
+        p::first-line {
+            padding: 20px;
+        }
+
+        p::first-letter{
+            font-size: 65px;
+        }
+
+        .dark{
+            background-color: #333;
+            color: white;
+        }
+
+    </style>
+</head>
+<body class="dark">
+<div title="Click to toggle to alternate theme" class="circle" id="circlebutton">
+<div class="top">
+    <div class="c1"></div>
+    <div class="c2"></div>
+</div>
+<br>
+<div class="bottom">
+    <div class="c3"></div>
+    <div class="c4"></div>
+</div>
+</div>
+
+<h1>Themes</h1>
+<p>This exercise's objective is to toggle between dark and light themes, and inform about the toggle being performed.</p>
+<p>Click the circle on the top to toggle between the themes. On toggling a pop up will appear informing about the toggle. Close the toggle by clicking on the close button on the top right corner of the modal box.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, quaerat! Quae maxime dolorem cumque. Eveniet amet facilis ut! Vero ducimus dignissimos laborum quis debitis suscipit fugit sapiente omnis explicabo alias.</p>
+
+<div class="modalbox" id="modalbox">
+    <p>You have toggled to alternate theme!</p>
+    <button id="closebtn">&times</button>
+</div>
+
+<script> 
+const button = document.getElementById("circlebutton");
+const modalbox = document.getElementById("modalbox");
+const closebtn = document.getElementById("closebtn");
+const bo = document.body;
+
+button.addEventListener("click", () => {
+    modalbox.style.display = "block";
+    bo.classList.toggle("dark");
+})
+
+closebtn.addEventListener("click", () => {
+    modalbox.style.display = "none";
+})
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+.container {
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    border: 2px solid black;
+    padding: 10px 30px;
+    border-radius: 10px;
+    background-color: peachpuff;
+    /* align-items: center; */
+    display: flex;
+    justify-items: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+button {
+   margin-top: 20px;
+   font-size: large;
+}
+
+p {
+    text-align: center;
+    font: bolder;
+    font-size: 20px;
+}
+
+label {
+    font-size: larger;
+}
+input {
+    margin: 10px;   
+    font-size: larger;
+}

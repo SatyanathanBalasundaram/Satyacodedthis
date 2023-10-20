@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Event</title>
+</head>
+<body>
+    <h1>Roll Over with Mouse Event</h1>
+    <img src="pirato.jpg" alt="pirate" width="240" height="240" id="img" name="img">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur porro id voluptatibus culpa, dicta, mollitia itaque odit natus voluptates pariatur eum, fuga quae. Porro, nisi tenetur minima quasi eos repellat.</p>
+    <script>
+        let rolloverimage=document.getElementById("img");
+        rolloverimage.onmouseover = function() {
+            rolloverimage.style = "height:400px; width:400px"
+        }
+        rolloverimage.onmouseout = function() {
+            rolloverimage.style = "height:240px; width:240px"
+        }
+    </script>
+</body>
+</html>

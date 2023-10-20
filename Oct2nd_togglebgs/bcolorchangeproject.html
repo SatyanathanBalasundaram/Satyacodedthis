@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background-Colour Change</title>
+    <style>
+        ul{
+            padding-right: 60px;
+        }
+        li {
+            list-style: none;
+            text-align: center;
+            font-size: 50px;
+        }
+        .Violet {
+            background-color: violet;
+        }
+        .Indigo {
+            background-color: indigo;
+        }
+        .Blue {
+            background-color: blue;
+        }
+        .Green {
+            background-color: green;
+        }
+        .Yellow {
+            background-color: Yellow;
+        }
+        .Orange {
+            background-color: Orange;
+        }
+        .Red {
+            background-color: Red;
+        }
+        button {
+            background-color: transparent;
+            border: none;
+            font-size: larger;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        h1 {
+            text-align: center;
+            font-size: 60px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1><span style="color: violet; background-color: red;">Background</span> <span style="color: blue; background-color: yellow;">Color</span> <span style="color: yellow;background-color: blue;">Change</span> <span style="color: red; background-color: violet;">Exercise</span></h1>
+    <ul>
+        <li title="Click the color to change the background to that color and click again to revert back to normal" class="Violet"><button onclick="Violet()">Violet</button></li>
+        <li title="Click the color to change the background to that color and click again to revert back to normal" class="Indigo"><button onclick="Indigo()">Indigo</button></li>
+        <li title="Click the color to change the background to that color and click again to revert back to normal" class="Blue"><button onclick="Blue()">Blue</button></li>
+        <li title="Click the color to change the background to that color and click again to revert back to normal" class="Green"><button onclick="Green()">Green</button></li>
+        <li title="Click the color to change the background to that color and click again to revert back to normal" class="Yellow"><button onclick="Yellow()">Yellow</button></li>
+        <li title="Click the color to change the background to that color and click again to revert back to normal" class="Orange"><button onclick="Orange()">Orange</button></li>
+        <li title="Click the color to change the background to that color and click again to revert back to normal" class="Red"><button onclick="Red()">Red</button></li>
+        
+    </ul>
+    
+    <script> 
+        function Violet(){
+            var Violet = document.body;
+            Violet.classList.toggle("Violet");
+        }
+        function Indigo(){
+            var Indigo = document.body;
+            Indigo.classList.toggle("Indigo");
+        }
+        function Blue(){
+            var Blue = document.body;
+            Blue.classList.toggle("Blue");
+        }
+        function Green(){
+            var Green = document.body;
+            Green.classList.toggle("Green");
+        }
+        function Yellow(){
+            var Yellow = document.body;
+            Yellow.classList.toggle("Yellow");
+        }
+        function Orange(){
+            var Orange = document.body;
+            Orange.classList.toggle("Orange");
+        }
+        function Red(){
+            var Red = document.body;
+            Red.classList.toggle("Red");
+        }
+    </script>
+    
+</body>
+</html>

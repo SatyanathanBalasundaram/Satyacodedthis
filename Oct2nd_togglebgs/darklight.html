@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+                   
+        .dark-mode {
+            background-color: black;
+            color: white;
+        }
+        
+        .purple {
+            background-color: purple;
+            color: white;
+        }
+
+        .orange {
+            background-color: orange;
+            color: white;
+        }
+        
+        
+        button {
+            font-size: large;
+        }
+        
+    </style>
+</head>
+<body>
+    <h2>Toggle Dark / Light mode</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nihil natus minima necessitatibus, sed nisi aliquam sunt dolore provident vitae optio qui numquam expedita deleniti eligendi dicta quo laborum velit?</p>
+    <button class="orange" onclick="purple()">Click to dark mode</button>
+    <div>
+        <script>
+            function purple(){
+                var element = document.body;
+                
+                element.classList.add("dark-mode");
+                // element.classList.toggle("orange");
+                
+                element.classList.toggle("purple");
+                
+            }
+            function purple(){
+                var element = document.body;
+                
+                element.classList.add("dark-mode");
+                element.classList.toggle("orange");
+                
+                element.classList.toggle("purple");
+                
+            }
+        </script>
+    </div>
+
+    
+</body>
+</html>

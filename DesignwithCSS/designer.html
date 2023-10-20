@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design using CSS</title>
+    <link rel="stylesheet" href="circle.css">
+</head>
+<body style="background-color: beige;">
+    <h1>I did this design using CSS!</h1>
+    <h2>Do you like it!?</h2>
+    <form>
+        <input type="radio" name="yes-no" id="yes">
+        <label for="yes">Yes</label>
+        <input type="radio" name="yes-no" id="no">
+        <label for="no">No</label>
+    </form>
+    <div class="circle">
+        <div class="half-left black"></div>
+        <div class="half-right white"></div>
+        <div class="half-left-top black"></div>
+        <div class="half-left-bottom white"></div>
+        <div class="white-dot white"></div>
+        <div class="black-dot black"></div>
+    </div>
+    <div class="modalbox" id="modalbox">
+        <p>Thank you for you valuable feedback!</p>
+        <button id="closebtn">&times</button>
+    </div>
+    <script> 
+        const yes = document.getElementById("yes");
+        const no = document.getElementById("no");
+        const modalbox = document.getElementById("modalbox");
+        const closebtn = document.getElementById("closebtn");
+        let yescount = 0;
+        let nocount = 0;
+         
+        yes.addEventListener("click", () => {
+            modalbox.style.display = "block";
+            yescount += 1 ; 
+        })
+        no.addEventListener("click", () => {
+            modalbox.style.display = "block";
+            nocount += 1 ; 
+        })
+        
+        closebtn.addEventListener("click", () => {
+            modalbox.style.display = "none";
+        })
+    </script>
+</body>
+</html>

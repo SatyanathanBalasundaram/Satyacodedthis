@@ -1,0 +1,123 @@
+tr:nth-last-child(2n) {
+    background-color: rgba(0, 0, 255, 0.263);
+}
+
+table, td, th, tr {
+    border: 1px solid blueviolet;
+    border-collapse: collapse;
+    font-size: 20px;
+}
+
+table {
+    margin: auto;
+}
+
+th {
+    font-size: larger;
+}
+tr:first-child {
+    background-color: rgb(146, 32, 144);
+    color: rgb(154, 154, 124);
+
+}
+
+
+td:nth-child(5n) {
+    text-align: center;
+}
+
+td:nth-child(4n) {
+    text-align: center;
+}
+
+h1{
+    width: fit-content;
+    margin: auto;
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#qb {
+    position: absolute;
+    top: 0px; 
+    left: 0px;
+    opacity: 0.4;
+    
+}
+#queen {
+    position: absolute;
+    top: 0px; 
+    left: 30px;
+}
+#htsdo {
+    position: absolute;
+    top: 400px; 
+    right: 20px;
+}
+#see {
+    position: absolute;
+    top: 700px; 
+    right: 20px;
+}
+#pb {
+    position: absolute;
+    top: 0px; 
+    right: 20px;
+}
+#stranger {
+    position: absolute;
+    top: 1000px; 
+    right: 20px;
+}
+
+#sc {
+    position: absolute;
+    top: 700px; 
+    left: 30px;
+}
+#dark {
+    position: absolute;
+    top: 1000px; 
+    left: 30px;
+}
+#op {
+    position: absolute;
+    top: 1350px; 
+    left: 30px;
+}
+#tb {
+    position: absolute;
+    top: 400px; 
+    left: 30px;
+}
+#se {
+    position: absolute;
+    top: 200px; 
+    left: 980px;
+    opacity: 0.3;
+}
+#peaky {
+    position: absolute;
+    top: 1182px;
+    left: 300px;
+}
+#b99 {
+    position: absolute;
+    right: 20px;
+    top: 1350px;
+}
+#qb1 {
+    position: absolute;
+    top: 768px;
+    left: 550px;
+    opacity: 0.4;
+}
+#qb2 {
+    position: absolute;
+    top: 480px;
+    left: 480px;
+    opacity: 0.4;
+}
+
+
+

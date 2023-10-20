@@ -1,0 +1,106 @@
+#increment-bt {
+    background-color: black;
+    color: goldenrod;
+    font: bolder;
+    font-size: 100px;
+    width: 150px;
+    height: 150px;
+    border: 6px solid goldenrod;
+    border-radius: 75px;
+    position: fixed;
+    left: 30%;
+}
+
+#decrement-bt {
+    background-color: gold;
+    color: black;
+    font: bolder;
+    font-size: 100px;
+    width: 150px;
+    height: 150px;
+    border: 6px solid #333;
+    border-radius: 75px;
+    position: fixed;
+    right: 30%;
+}
+
+table {
+    
+     /* border: 2px solid #333; */
+     width: 100%;
+     text-align: center;
+     justify-content: center;
+}
+
+td {
+    width: 50%;
+}
+
+
+h2 {
+    text-align: center;
+    font-size: 100px;
+    padding: 0px;
+    color: goldenrod;
+    background-color: black;
+    width: fit-content;
+    margin: auto;
+    
+}
+
+
+#reset {
+    position: fixed;
+    text-align: center;
+    justify-content: center; 
+}
+
+.R1 {
+    transform: translate(-25px,25px) rotate(45deg);
+}
+.E1 {
+    transform: translate(-20px,70px) rotate(30deg);
+}
+.S1 {
+    transform: translate(0px,90px) rotate(0deg);
+}
+.E2 {
+    transform: translate(20px,70px) rotate(-30deg);
+}
+.T1 {
+    transform: translate(25px,25px) rotate(-45deg);
+}
+
+span {
+    display: inline-block;
+}
+
+span:nth-child(2n){
+    background-color: gold;
+    border-radius: 20px;
+}
+span:nth-child(2n+1){
+    background-color: black;
+    color: goldenrod;
+    border-radius: 20px;
+}
+button {
+    text-align: center;
+    font-size: 70px;
+    background-color: transparent;
+    border: none;
+}
+
+
+h3 {
+    position: fixed;
+    left: 39.5%;
+    margin: 0px;
+}
+
+body {
+    background-image: url('240_F_572884394_V5o9zflkWWQ8mpeb8P7JbD8gLxp9dae7.jpg') ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100% ;
+}
